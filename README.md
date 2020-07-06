@@ -6,17 +6,9 @@
 
 ### Notes
 > **XXX** - current lesson number
+
 > **YOUR_LASTNAME_YOUR_FIRST_NAME** - `Musk_Elon`
+
 > **Presentations** - folder for slides
+
 > **Homeworks** - folder for homeworks
-
-
--- homeworks
-    -- lesson-2
-        --YOUR_LASTNAME_YOUR_FIRST_NAME_HW_2
-    
-    -- lesson-3
-        --YOUR_LASTNAME_YOUR_FIRST_NAME_HW_3
-
-    -- lesson-4
-        --YOUR_LASTNAME_YOUR_FIRST_NAME_HW_4
