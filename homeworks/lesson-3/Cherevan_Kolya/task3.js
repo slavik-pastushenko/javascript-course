@@ -1,3 +1,5 @@
+//solution1 
+
 const num1 = prompt();
 const num2 = prompt();
 
@@ -19,3 +21,20 @@ const numGenerated = (param1, param2) => {
 
 console.log(numGenerated(num1, num2))
 
+
+//solution2 
+
+
+const num1 = +prompt();
+const num2 = +prompt();
+
+function numChecked(num1, num2) {
+    if (num1 % 2 === 0 && num2 % 2 === 0) {
+        return num1 * num2;
+    } else if (num1 != num2) {
+        return ((num1 % 2 === 0)) ? num2 : num1;
+    } else {
+        return num1 + num2
+    }
+}
+console.log(numChecked(num1, num2))
