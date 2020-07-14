@@ -1,4 +1,2 @@
-let array = ["jidshci", "jfs", "hello", "hi", "one", "twoAndThree"];
-console.log(array.filter(item => {
-    return item.length > 5;
-}));
+const array = ["jidshci", "jfs", "hello", "hi", "one", "twoAndThree"];
+console.log(array.filter(item => item.length > 5 ));
