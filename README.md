@@ -7,8 +7,8 @@
 ### Notes
 > **XXX** - current lesson number
 
-> **YOUR_LASTNAME_YOUR_FIRST_NAME** - `Musk_Elon`
+> **Homeworks** - folder for homeworks
 
 > **Presentations** - folder for slides
 
-> **Homeworks** - folder for homeworks
+> **YOUR_LASTNAME_YOUR_FIRST_NAME** - `Musk_Elon`
