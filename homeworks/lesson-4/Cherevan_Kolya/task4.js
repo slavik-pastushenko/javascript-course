@@ -1,3 +1,4 @@
+
 // solution 1
 const someNumb = +prompt();
 
