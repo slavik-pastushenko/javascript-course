@@ -1,3 +1,4 @@
+// solution 1
 const someNumb = +prompt();
 
 function sumNumb(param) {
@@ -24,3 +25,24 @@ function resultFunction(param) {
 }
 
 console.log(resultFunction(someNumb))
+
+
+// more optimize
+
+const someNumb = 3;
+
+function checkedNumber(param) {
+    return Math.sign(param) === 1 ? param : param === 0 ? 0 : `${param} < 0`;
+}
+
+const finallyFunction = (funct) => {
+    let i = -1;
+    const newArr = [];
+    while (i < funct) {
+        ++i;
+        newArr.push(i);
+    }
+    const sum = newArr.reduce((a, currentNum) => a + currentNum);
+    return `${newArr.join('+')} = ${sum}`
+}
+console.log(finallyFunction(checkedNumber(someNumb)))
