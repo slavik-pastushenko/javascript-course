@@ -1,3 +1,4 @@
+
 // solution 1
 const someNumb = +prompt();
 
@@ -26,10 +27,7 @@ function resultFunction(param) {
 
 console.log(resultFunction(someNumb))
 
-
-// more optimize
-
-const someNumb = 3;
+// solution 2
 
 function checkedNumber(param) {
     return Math.sign(param) === 1 ? param : param === 0 ? 0 : `${param} < 0`;
@@ -45,4 +43,6 @@ const finallyFunction = (funct) => {
     const sum = newArr.reduce((a, currentNum) => a + currentNum);
     return `${newArr.join('+')} = ${sum}`
 }
+
 console.log(finallyFunction(checkedNumber(someNumb)))
+
