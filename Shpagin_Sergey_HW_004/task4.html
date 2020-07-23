@@ -5,17 +5,20 @@
 </head>
 <body>
     <script>
-        const myNumber = prompt ("Введите число");
-        function test(n){
-            let sum = 0; 
-            for (let i = 0; i <= n; i++){
-                sum += i;
-            }
-            return sum;
-             
-        } 
-        
-        console.log(test(myNumber));
+        const array = [
+            { model: 'BMW', creationDate: 2020 },
+            { model: 'Audi', creationDate: 2015 },
+            { model: 'Volvo', creationDate: 2019 },
+            { model: 'Mercedes', creationDate: 2010 },
+        ];
+
+        function sortArr (arr){
+            const newArray = arr.slice();
+            return newArray.sort(function(a, b){
+              return a.creationDate - b.creationDate;
+            });
+        }
+        console.log(sortArr(array),array);
 
     </script>
 </body>

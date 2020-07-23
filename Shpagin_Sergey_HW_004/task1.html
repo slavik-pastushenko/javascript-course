@@ -5,11 +5,13 @@
 </head>
 <body>
     <script>
-         const myStrings = [{name:"presentation", simbol:12},{name:"audio",simbol:5},{name:"video",simbol:5},{name:"practic",simbol:7},{name:"homework",simbol:8}];
-            const fiveSimbols = myStrings.filter (function (e) {
-            return e.simbol > 5;    
-            });
-            console.log(fiveSimbols);
+        let number = 1000;
+        let totalIterations = 0;
+        while(number > 50){
+            number /= 2;
+            totalIterations++;
+        }
+console.log(`число - ${number}. итерации - ${totalIterations}`);
     </script>
 </body>
 </html>
