@@ -6,13 +6,18 @@
 <body>
     <script>
         
-        const array = [4, 2, 5, 19, 13, 0, 10];
-        let Summa = 0;
-        for (let i = 0; i < array.length; i++){
-            Summa += Math.pow(array[i], 3);
+        function arr(test){
+            return new Promise(function(resolve,reject){
+                const hasNullValue = null === test.find(function(value){
+                    return value === null;
+                });
+                
+                if (hasNullValue) reject();
+                else setTimeout(function(){
+                    resolve(test[test.length - 1]) 
+                },3000); 
+            });     
         }
-        console.log(Math.sqrt(Summa));
-		
 
     </script>
 </body>

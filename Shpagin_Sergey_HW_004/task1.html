@@ -5,13 +5,15 @@
 </head>
 <body>
     <script>
-        let number = 1000;
-        let totalIterations = 0;
-        while(number > 50){
-            number /= 2;
-            totalIterations++;
-        }
-console.log(`число - ${number}. итерации - ${totalIterations}`);
+       
+        function number(x){
+            return new Promise(function(resolve,reject){
+                if (x > 10) resolve();
+                else reject();
+            });
+        }    
+        
+
     </script>
 </body>
 </html>
