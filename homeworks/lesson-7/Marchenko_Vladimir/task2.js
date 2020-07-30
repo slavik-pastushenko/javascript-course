@@ -22,3 +22,5 @@ async function arrayPromise2 (arr3) {
 
 const arr4 = [1, 2, null, 3, 2];
 arrayPromise2(arr4);
+
+// при этом, я не понял почему не работает async/await , что то я не догоняю) 
