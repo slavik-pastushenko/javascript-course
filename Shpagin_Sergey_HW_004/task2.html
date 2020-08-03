@@ -5,19 +5,11 @@
 </head>
 <body>
     <script>
-        
-        function arr(test){
-            return new Promise(function(resolve,reject){
-                const hasNullValue = null === test.find(function(value){
-                    return value === null;
-                });
                 
-                if (hasNullValue) reject();
-                else setTimeout(function(){
-                    resolve(test[test.length - 1]) 
-                },3000); 
-            });     
-        }
+        let date = new Date();
+        let now = new Date(date.getFullYear(), date.getMonth(), date.getDate(), 0, 0, 0);
+        let result = Math.trunc((date.getTime() - now.getTime()) / 1000);
+        alert(result);
 
     </script>
 </body>
