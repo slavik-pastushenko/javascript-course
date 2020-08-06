@@ -16,7 +16,7 @@ function ipChecker1(str){
     arr = str.split('.');
     if(arr.length == 4){
         function is0or255_2(ipPart){
-            return /^([0-9]|[1-9][0-9]|[1][0-9][0-9]|[2][0-5][0-5])$/.test(Number(ipPart));
+            return /^([0-9]|[1-9][0-9]|[1][0-9][0-9]|[2][0-4][0-9]|[2][5][0-5])$/.test(Number(ipPart));
         }
         return is0or255_2(arr[0]) && is0or255_2(arr[1]) && is0or255_2(arr[2]) && is0or255_2(arr[3]);
     } else {
