@@ -1,3 +1,3 @@
 ## Lesson 10
 
-- TBD
+- https://youtu.be/9Sr3QJCzS9g
