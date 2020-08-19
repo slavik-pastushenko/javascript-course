@@ -8,4 +8,4 @@ switch(language) {
         break;
     default:
         alert('ua');
-}
+};
