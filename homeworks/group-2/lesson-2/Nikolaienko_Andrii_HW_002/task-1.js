@@ -1,5 +1,5 @@
 const language = prompt('language ru or en')
-switch(language) {
+switch (language) {
     case 'ru':
         alert('Русский');
         break;
