@@ -5,11 +5,32 @@
 </head>
 <body>
     <script>
+      
+        function checkPassword(password){
+            if (password.length > 32){
+                return false;
+            } 
+            if (!password.match(/[A-Z]/) ){
+                return false;
+            } 
+            if (!password.match(/[a-z]/) ){
+                return false;
+            } 
+            if (!password.match(/[0-9]/) ){
+                return false;
+            } 
+            if (!password.match(/[ !"#$%&'()*+,\-.\/:;<=>?@[\\\]^_`{|}]/) ){
+                return false;
+            } 
+            return true;
+
                 
-        let date = new Date();
-        let now = new Date(date.getFullYear(), date.getMonth(), date.getDate(), 0, 0, 0);
-        let result = Math.trunc((date.getTime() - now.getTime()) / 1000);
-        alert(result);
+            
+        }
+       
+        alert(checkPassword('312$#222223+333333fF3333ert4444'));
+
+
 
     </script>
 </body>

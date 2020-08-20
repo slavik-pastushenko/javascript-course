@@ -1,18 +1,21 @@
 <!doctype html>
 <html>
+
 <head>
     <meta charset="utf-8" />
 </head>
+
 <body>
     <script>
-       function getWeekDay(date) {
-        let days = ['ВС', 'ПН', 'ВТ', 'СР', 'ЧТ', 'ПТ', 'СБ'];
+        function ipValidation(str) {
+            return null !== str.match(/^([01]?\d\d?|2[0-4]\d|25[0-5])\.([01]?\d\d?|2[0-4]\d|25[0-5])\.([01]?\d\d?|2[0-4]\d|25[0-5])\.([01]?\d\d?|2[0-4]\d|25[0-5])$/)
 
-        return days[date.getDay()];
-    }
-       let date = new Date(2020, 0, 7);
-       alert( getWeekDay(date) );
+        }
+        const ip = '0.0.0.0';
+        console.log(ipValidation(ip));
 
+        
     </script>
 </body>
+
 </html>
