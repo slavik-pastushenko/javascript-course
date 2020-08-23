@@ -11,4 +11,4 @@ else if (minute>=31 && minute<46) {
 else if (minute>=46 && minute<59) {
     alert('Четвёртая четверсть часа!')
 }
-else alert('Вы ввели неправильное значение!')
+else alert('Вы ввели неправильное значение!');
