@@ -1,8 +1,9 @@
 function checktype (num = 1){
     if(typeof num === 'number'){
-       num.toString();
+       return `${num}`
 }else{
-    ( 'введено не число');
-    console.log(num);
+
+    return'введен не правильный тип';
 }
 }
+console.log(checktype('5'));
