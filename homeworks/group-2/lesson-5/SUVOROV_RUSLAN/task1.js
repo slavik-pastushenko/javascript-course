@@ -4,4 +4,4 @@ while(thousand > 50){
     thousand /= 2;
     totalIterations++;
 }
-console.log(`Resoult = ${thousand}, totalIterations = ${totalIterations}`);
+console.log(`Result = ${thousand}, totalIterations = ${totalIterations}`);
