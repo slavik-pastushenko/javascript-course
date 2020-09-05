@@ -5,17 +5,22 @@ const mas2 = [1, '2', 3, 132, 5];
 function notNull (arr) {
    return  new Promise((resolve, reject) => arr.some(num => num === null) !== true ? 
     setTimeout(() => resolve(arr.pop()), 3000) : 
-    reject('There is Null in the array'));
+    reject('There is Null in this array'));
 };
 notNull(mas1).then(elem => console.log(elem)).catch(nul => console.log(nul));
 notNull(mas2).then(elem => console.log(elem)).catch(nul => console.log(nul));
 
 //Second realization
 async function noOneNull (mas) {
-	let res = new Promise((resolve, reject) => mas.some(n => n === null) === false ? 
+	try{ let res = new Promise((resolve, reject) => mas.some(n => n === null) === false ? 
 		setTimeout(() => resolve(mas.pop()), 3000) : 
-		reject('There is Null in the array')); 
-    const result = await res
-        return result;
+		reject(new Error('There is Null in this array'))); 
+    const result = await res;
+    console.log(result)}
+  catch(e){
+    console.log(e.message)
+  }
+    
 };
-console.log(noOneNull(mas1));
+noOneNull(mas1)
+noOneNull(mas2)
