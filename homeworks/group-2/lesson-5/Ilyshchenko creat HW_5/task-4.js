@@ -18,6 +18,6 @@ const avto = [
     { model: 'Mercedes', creationDate: 2010 },
 ];
 const sortAvto = (avto) => {
-    return avto.sort(sortOfYear);
+    return  avto.sort(sortOfYear)
 }
 console.log(sortAvto(avto))
