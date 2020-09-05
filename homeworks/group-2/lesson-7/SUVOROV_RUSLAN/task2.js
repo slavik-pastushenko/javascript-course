@@ -15,8 +15,7 @@ async function noOneNull (mas) {
 	try{ let res = new Promise((resolve, reject) => mas.some(n => n === null) === false ? 
 		setTimeout(() => resolve(mas.pop()), 3000) : 
 		reject(new Error('There is Null in this array'))); 
-    const result = await res;
-    console.log(result)}
+    console.log(await res)}
   catch(e){
     console.log(e.message)
   }
