@@ -19,7 +19,7 @@ async function noOneNull (mas) {
   catch(e){
     console.log(e.message)
   }
-    
+
 };
-noOneNull(mas1)
-noOneNull(mas2)
+noOneNull(mas1);
+noOneNull(mas2);
