@@ -54,7 +54,7 @@ function goodUser() {
             id: us.id,
             name: us.name,
             email: us.email,
-            post: userPosts,
+            posti: userPosts,
             postsCount: userPosts.length
 
         }
@@ -66,7 +66,7 @@ async function postNewUserVip_1() {
         id: 25,
         name: 'dad',
         email: 'www0@mail.com',
-        post: 20,
+        posti: 20,
         postsCount: 20
     })
     allUser.push(newUserVip_1)
@@ -78,7 +78,7 @@ async function postNewUserVip_2() {
         id: 26,
         name: 'dadest',
         email: 'www1@mail.com',
-        post: 21,
+        posti: 21,
         postsCount: 21
     })
     allUser.push(newUserVip_2)
@@ -90,17 +90,17 @@ async function postNewUserVip_3() {
         id: 27,
         name: 'dad',
         email: 'www2@mail.com',
-        post: 24,
+        posti: 24,
         postsCount: 24
     })
     allUser.push(newUserVip_3)
     return newUserVip_3
 }
 
-async function searchTopUser(allUser) {
+function searchTopUser(allUser) {
     let vipUser = []
     allUser.post.values(allUser).sort().forEach(function (value) {
         vipUser[value] = allUser[value];
-        return allUser.forEach(user => { user.post > })
+         allUser.forEach(user => { user.post > })
     }return allUser.slice(0, 2)
 }
