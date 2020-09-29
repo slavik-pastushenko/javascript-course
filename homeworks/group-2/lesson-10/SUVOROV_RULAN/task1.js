@@ -1,7 +1,7 @@
 const axios = require('axios');
 
 async function getUsers() {
-    const {data: posts} = await axios.get('http://jsonplaceholder.typicode.com/users');
+    const {data: users} = await axios.get('http://jsonplaceholder.typicode.com/users');
 
     const isEmailExists = users.filter(user => user.email === 'shaa@melissa.com');
 
